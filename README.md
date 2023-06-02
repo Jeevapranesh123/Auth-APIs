@@ -24,10 +24,9 @@ MONGO_PROD_DATABASE=<production-database-name>
 MONGODB_URL=<mongodb-url>
 ```
 
-```Note: Please have a mongodb instance running on your local machine or provide a mongodb url to connect to a remote instance.
+Note: Please have a mongodb instance running on your local machine or provide a mongodb url to connect to a remote instance.
     If you have docker installed, run the following command to start a mongodb instance on your local machine.
-```
-
+    
 ```bash
 docker run -d -p 27017:27017 mongo
 ``` 
