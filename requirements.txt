@@ -1,0 +1,16 @@
+databases==0.4.3
+uvicorn==0.11.8
+starlette==0.14.2
+pydantic==1.8.2
+fastapi_contrib==0.2.11
+motor==2.2.0
+fastapi==0.68.1
+fastapi_jwt_auth==0.5.0
+fastapi-jwt-auth[asymmetric]
+opentracing
+python-multipart
+loguru
+python-dotenv
+dnspython
+bcrypt
+passlib
