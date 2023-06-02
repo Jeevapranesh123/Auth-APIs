@@ -24,6 +24,19 @@ MONGO_PROD_DATABASE=<production-database-name>
 MONGODB_URL=<mongodb-url>
 ```
 
+```Note: Please have a mongodb instance running on your local machine or provide a mongodb url to connect to a remote instance.
+    If you have docker installed, run the following command to start a mongodb instance on your local machine.
+```
+
+```bash
+docker run -d -p 27017:27017 mongo
+``` 
+
+This will start a mongodb instance on port 27017. You can then use `mongodb://localhost:27017` as the mongodb url in the `.env` file.
+
+```Note: This command doesn't preserve data. So if you want to preserve data, please use a volume to mount the data directory to the container.```
+
+
 4. Run the application
 
 For windows
