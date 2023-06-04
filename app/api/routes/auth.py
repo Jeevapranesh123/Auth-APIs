@@ -1,8 +1,7 @@
 from app.db.db import AsyncIOMotorClient, get_database
 from app.schemas.auth import *
-from fastapi import APIRouter, HTTPException, Depends, Response, Request
+from fastapi import APIRouter, Depends, Response, Request
 from app.api.controllers import auth as auth_controller
-from fastapi_jwt_auth import AuthJWT
 
 
 router = APIRouter()
