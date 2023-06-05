@@ -47,7 +47,6 @@ def custom_openapi():
 
     for route in api_router:
         path = getattr(route, "path")
-        # endpoint = getattr(route, "endpoint")
         methods = [method.lower() for method in getattr(route, "methods")]
         for method in methods:
             if path in auth_required_routes:
