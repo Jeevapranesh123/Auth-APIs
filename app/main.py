@@ -80,8 +80,6 @@ app.add_event_handler("shutdown", close_mongo_connection)
 
 @app.on_event("startup")
 async def startup():
-    # setup_opentracing(app)
-    # app.add_middleware(OpentracingMiddleware)
     logger.info("Application started")
 
 
